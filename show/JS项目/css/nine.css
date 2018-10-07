@@ -1,0 +1,49 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+#lottery{
+	width: 600px;
+	height: 600px;
+	margin: 0 auto;
+	/*background: yellowgreen;*/
+	border: 1px solid red;
+}
+#lottery table td{
+	position: relative;
+	width: 200px;
+	height: 200px;
+	text-align: center;
+	color: #333;;
+	font-index:-999;
+}
+#lottery table td img{
+	display: block;
+	width: inherit;
+	height: inherit;
+}
+
+#lottery table td a{
+	width: inherit;
+	height: inherit;
+	display: block;
+	text-decoration: none;
+	background: url(../img/nine/choujiang.jpg) no-repeat;
+	background-size: 100% 100%;
+}
+#lottery table td a:hover{
+	background-image: url(../img/nine/choujiang2.jpg);
+}
+#lottery table td.active .float{
+	display: block;
+}
+
+.float{
+	width: 200px;
+	height: 200px;
+	position: absolute;
+	left: 0;
+	top: 0;
+	background-color: rgba(255,165,0,0.5);
+	display: none;
+}

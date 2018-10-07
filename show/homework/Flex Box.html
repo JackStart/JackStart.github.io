@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>弹性盒子</title>
+		<style type="text/css">
+			.bigbox{
+				display: flex;
+				width: 400x;
+				height: 300px;
+				background: skyblue;
+				/*flex-direction: row-reverse;*/
+				flex-wrap: wrap;
+				justify-content: flex-start;
+			}
+			.bigbox div {
+				width: 100px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="bigbox">
+			<div class="a" style="background: orange;">boxa</div>
+			<div class="b" style="background: greenyellow;">boxb</div>
+			<div class="c" style="background: gold;">boxc boxc boxc</div>
+		</div>
+	</body>
+</html>

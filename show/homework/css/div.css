@@ -1,0 +1,45 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.all {
+	width: 300px;
+	background: lightblue;
+}
+
+.top {
+	background: orange;
+}
+
+.top p {
+	margin-bottom: 0;
+	font-size: 25px;
+	text-align: center;
+}
+.main{
+	width: 300px;
+	height: 150px;
+}
+
+.left {
+	background: yellow;
+	height: 150px;
+	width: 100px;
+	float: left;
+	text-align: center;
+}
+
+.right {
+	background-color: gray;
+	height: 150px;
+	width: 200px;
+	float: right;
+	text-align: center;
+}
+.footer{
+	width: 300px;
+	height: 25px;
+	background: orange;
+	text-align: center;
+}

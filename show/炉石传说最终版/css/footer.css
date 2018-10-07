@@ -1,0 +1,400 @@
+div {
+	display: block;
+}
+
+i {
+	font-style: italic;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+dl,
+dt {
+	margin: 0;
+	padding: 0;
+}
+
+dt {
+	display: block;
+}
+
+strong {
+	font-style: normal;
+	font-weight: 400;
+}
+
+footer {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	line-height: 26px;
+	width: auto;
+	height: 471px;
+	z-index: 3;
+	font-size: 12px!important;
+	background: url(../img/footerrepeat.jpg) repeat-x;
+	background: url(../img/footer.jpg) no-repeat 50% 0;
+}
+
+footer a {
+	text-decoration: none;
+	padding-top: 5px;
+	color: #fff;
+	font-weight: 400;
+}
+
+.regWrapper {
+	width: 349px;
+	height: 87px;
+	position: absolute;
+	z-index: 101;
+	left: 50%;
+	top: -30px;
+	margin-left: -175px;
+	background: url(../img/reg-bg.png) no-repeat;
+}
+
+.regWrapper .u-regBtn {
+	background: url(../img/reg-btn.png) no-repeat;
+	bottom: -5px;
+	display: block;
+	height: 78px;
+	left: 50%;
+	margin-left: -123px;
+	overflow: hidden;
+	position: absolute;
+	text-indent: -9999px;
+	width: 249px;
+}
+
+#f-business {
+	width: 1000px;
+	position: relative;
+	left: 50%;
+	margin-left: -500px;
+	color: #fff;
+	z-index: 100;
+	padding-top: 79px;
+	font-size: 14px;
+}
+
+#f-business .f-cs {
+	float: left;
+	font-size: 14px;
+}
+
+#f-business .f-cs a {
+	color: #fff;
+	margin-left: 37px;
+	vertical-align: middle;
+}
+
+
+/*图标样式*/
+
+
+/*不显示出来的原因，没给宽高*/
+
+#f-business .icon {
+	background-image: url(../img/f-business.png);
+	background-repeat: no-repeat;
+}
+
+#f-business .icon-1 {
+	background-position: -6px -7px;
+	width: 19px;
+	height: 19px;
+	display: inline-block;
+	position: relative;
+	top: 5px;
+	margin-right: 10px;
+}
+
+#f-business .icon-2 {
+	background-position: -36px -8px;
+	width: 19px;
+	height: 19px;
+	display: inline-block;
+	position: relative;
+	top: 6px;
+	margin-right: 10px;
+}
+
+#f-business .icon-3 {
+	background-position: -8px -32px;
+	width: 19px;
+	height: 19px;
+	display: inline-block;
+	position: relative;
+	top: 4px;
+	margin-right: 10px;
+}
+
+#f-business .foot-media {
+	text-align: right;
+	vertical-align: top;
+}
+
+#f-business .foot-media p {
+	display: inline-block;
+	color: #fff;
+	font-size: 14px;
+}
+
+.foot-icon {
+	background-image: url(../img/business-logo.png);
+	background-repeat: no-repeat;
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 5px;
+}
+
+#f-business .foot-media .icon-nvidia {
+	background-position: -352px 0;
+	width: 95px;
+	height: 26px;
+}
+
+
+/**/
+
+#f-business .foot-media .icon-apply {
+	margin-right: 13px;
+}
+
+#f-business .foot-media .icon-apply,
+#f-business .foot-media .icon-more {
+	background: #241101;
+	border: 1px solid #2d1702;
+	color: #ac771f;
+}
+
+#f-business .foot-media .icon-apply,
+#f-business .foot-media .icon-more {
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+	margin: 0 0 0 13px;
+	position: relative;
+	top: 3px;
+	cursor: pointer;
+	padding-top: 0;
+}
+
+#f-business .foot-media .icon-apply i.line-h,
+#f-business .foot-media .icon-apply i.line-s {
+	background: #ac771f;
+}
+
+#f-business .foot-media .icon-apply i.line-h {
+	width: 10px;
+	height: 2px;
+	margin: -1px 0 0 -5px;
+}
+
+#f-business .foot-media .icon-apply i.line-s {
+	width: 2px;
+	height: 10px;
+	margin: -5px 0 0 -1px;
+}
+
+#f-business .foot-media .icon-apply i.line-h,
+#f-business .foot-media .icon-apply i.line-s {
+	position: absolute;
+	display: block;
+	background: #fff;
+	top: 50%;
+	left: 50%;
+}
+
+
+/*合作媒体*/
+
+#f-business .foot-media dl {
+	/*display: inline-block;*/
+	position: relative;
+	margin-left: 10px;
+}
+
+#f-business .foot-media .icon-more i {
+	border-top-color: #AC771F;
+}
+
+#f-business .foot-media .icon-more i {
+	border: 4px solid transparent;
+	border-top-color: #fff;
+	display: block;
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin: -2px 0 0 -4px;
+}
+
+
+/*下拉*/
+
+#f-business .foot-media dl dd {
+	background: #1f1009;
+	border: 1px solid #261c12;
+	position: absolute;
+	top: 25px;
+	right: 0;
+	width: 756px;
+	padding: 8px 0 10px 20px;
+}
+
+#f-business .foot-media dl dd ul li {
+	float: left;
+	width: 108px;
+	text-align: left;
+	line-height: 22px;
+}
+
+#f-business .foot-media dl dd ul li a {
+	color: #b5a89f;
+	padding-top: 0;
+}
+
+#f-business .foot-media dl dd ul li.applyBtn {
+	float: right;
+}
+
+#f-business .foot-media dl dd ul li.applyBtn a {
+	color: #ea8631;
+	text-decoration: underline;
+}
+
+
+/*cprt*/
+
+.cprt {
+	text-align: left;
+	width: 1000px;
+	margin: 0 auto 8px;
+	padding-top: 40px;
+	position: relative;
+}
+
+footer .logo_bz {
+	display: inline-block;
+	width: 140px;
+	height: 80px;
+	overflow: hidden;
+	vertical-align: top;
+	margin: 0;
+	position: relative;
+	background: url(../img/logo_blizzard.png) no-repeat 0 0;
+}
+
+footer .logo_ne {
+	display: inline-block;
+	background: url(../img/logo_ne.png) no-repeat 0 0;
+	width: 125px;
+	height: 38px;
+	overflow: hidden;
+	vertical-align: top;
+	position: relative;
+	top: 39px;
+	margin: 0;
+}
+
+footer .cprt .info,
+footer .cprt .info p a:active {
+	color: #552c09;
+}
+
+footer .cprt .info {
+	width: 706px;
+	float: right;
+	text-align: left;
+	padding: 0 0 0 73px;
+	vertical-align: middle;
+	position: relative;
+	box-sizing: border-box;
+}
+
+footer .cprt .info ul {
+	margin: 0 0 0 -10px;
+	padding: 0 0 5px;
+	overflow: hidden;
+	list-style: none;
+}
+
+.clearFix {
+	display: block;
+}
+
+.clearFix:after {
+	display: block;
+	clear: both;
+	height: 0;
+	visibility: hidden;
+	content: ".";
+}
+
+footer .cprt .info ul li {
+	float: left;
+	list-style: none;
+}
+
+footer .cprt .info ul li a {
+	color: #ccc;
+	padding: 0 10px;
+	font-size: 14px;
+}
+
+footer .info p {
+	font-size: 12px;
+	margin: 0;
+	line-height: 20px;
+	font-weight: 400;
+}
+
+footer .integrity {
+	padding: 8px 0px;
+}
+
+
+/*浮动*/
+
+#app {
+	bottom: 200px;
+	-webkit-perspective: 500;
+	-moz-perspective: 500;
+	-ms-perspective: 500;
+	perspective: 500;
+	-ms-transform: perspective(500px);
+	-moz-transform: perspective(500px);
+	-moz-transform-style: preserve-3d;
+	-ms-transform-style: preserve-3d;
+}
+
+#app,
+#weibo,
+#gotop{
+	width: 82px;
+	height: 82px;
+	cursor: pointer;
+	position: fixed;
+	right: 20px;
+	z-index: 10000;
+	border-radius: 50%;
+	background-color: rgba(96, 52, 18, .6);
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+#weibo {
+    bottom: 110px;
+    background-image: url(../img/weibo-icon.png);
+}
+#gotop {
+    display: none;
+    bottom: 20px;
+    background-image: url(../img/gotop-icon.png);
+}

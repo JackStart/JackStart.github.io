@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<title>用户注册</title>
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script type="text/javascript" src="js/jquery-3.3.1.js"></script>
+		<script type="text/javascript" src="js/city.js"></script>
+		<script type="text/javascript">
+			$(function() {
+				$("#radio >input[name='sex']").each(function() {
+					var radio = "man",
+						var obj = $(this).attr("id");
+					if(obj == radio) {
+						$(this).prop("checked", true);
+					}
+				});
+			});
+		</script>
+	</head>
+
+	<body>
+		<form action="#" method="post" class="all" name="change">
+			<!--用户名-->
+			<div class="user">
+				<label style="float: left;">用户名：</label>
+				<div class="text">
+					<span></span>
+					<input type="text" style="margin-left: 14px;"/>
+				</div>
+			</div>
+			<!--密码-->
+			<div class="password">
+				<label style="float: left;">密码：</label>
+				<div class="text">
+					<span></span>
+					<input type="password" style="margin-left: 30px;"/>
+				</div>
+			</div>
+			<!--性别-->
+			<label style="float: left; margin-left: 148px;">请选择你的性别：</label>
+			<div class="radio" >
+				<input type="radio" name="sex" id="male" /><label for="male">男</label>
+				<input type="radio" name="sex" id="female" /><label for="female">女</label>
+			</div>
+			<!--地区-->
+			<!--<div class="diqu">
+				<select name="">
+					<option value="">1</option>
+					<option value="">2</option>
+					<option value="">3</option>
+					<option value="">4</option>
+					<option value="">5</option>
+				</select>
+			</div>-->
+			<p style="margin-left: 148px;">请选择你所在的城市：</p>
+			<label style="margin-left: 148px;">省份</label>
+			<select name="province" onchange="changecity()">
+				<option selected>选择省份</option>
+				<option value="北京">北京</option>
+				<option value="天津">天津</option>
+				<option value="上海">上海</option>
+				<option value="重庆">重庆</option>
+				<option value="江苏省">江苏省</option>
+				<option value="广东省">广东省</option>
+				<option value="浙江省">浙江省</option>
+				<option value="福建省">福建省</option>
+				<option value="湖南省">湖南省</option>
+				<option value="湖北省">湖北省</option>
+				<option value="山东省">山东省</option>
+				<option value="辽宁省">辽宁省</option>
+				<option value="吉林省">吉林省</option>
+				<option value="云南省">云南省</option>
+				<option value="四川省">四川省</option>
+				<option value="安徽省">安徽省</option>
+				<option value="江西省">江西省</option>
+				<option value="黑龙江省">黑龙江省</option>
+				<option value="河北省">河北省</option>
+				<option value="陕西省">陕西省</option>
+				<option value="海南省">海南省</option>
+				<option value="河南省">河南省</option>
+				<option value="山西省">山西省</option>
+				<option value="内蒙古">内蒙古</option>
+				<option value="广西">广西</option>
+				<option value="贵州省">贵州省</option>
+				<option value="宁夏">宁夏</option>
+				<option value="青海省">青海省</option>
+				<option value="新疆">新疆</option>
+				<option value="西藏">西藏</option>
+				<option value="甘肃省">甘肃省</option>
+				<option value="台湾省">台湾省</option>
+				<option value="香港">香港</option>
+				<option value="澳门">澳门</option>
+				<option value="国外">国外</option>
+			</select>
+			<label for="">城市</label>
+			<select name="city">
+				<option value="">所在城市</option>
+			</select>
+			<div class="btn" style="margin-left: 220px;margin-top: 25px;">
+				<input type="submit" value="注册" />
+				<input type="reset" value="重置" style="margin-left: 35px;"/>
+			</div>
+		</form>
+	</body>
+
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>cat</title>
+		<style type="text/css">
+			.run{
+				width: 180px;
+				height: 300px;
+				background: rgba(255,0,255,.3) url(img/sprites.png) no-repeat;
+				animation-name: run;
+				animation-duration: 2s;
+				animation-timing-function: steps(7,start);
+				animation-iteration-count: infinite;
+				/* background: red; */
+				
+			}
+			@keyframes run{
+				0% {background-position-x:180px;}
+				100% {background-position-x:100%;}
+			}
+			.cat{
+				width: 500px;
+				height: 500px;
+				/* width: 105px; */
+				/* height: 75px; */
+				background: skyblue url(img/cat-timg.jpg) no-repeat;
+				animation-name: catrun;
+				animation-duration: 3s;
+				animation-timing-function: steps(5,start);
+				animation-iteration-count: infinite;
+			}
+			@-webkit-keyframes catrun {
+				0% {background-position-x: ;}
+				100% {background-position-x:  ;}
+			}
+			@-o-keyframes catrun {
+				0% {background-position-x: ;}
+				100% {background-position-x:  ;}
+			}
+			@-moz-keyframes catrun {
+				0% {background-position-x: ;}
+				100% {background-position-x:  ;}
+			}
+			@keyframes catrun {
+				0% {background-position-x: ;}
+				100% {background-position-x:  ;}
+			}
+			 /* */
+			 .bashen{
+				 width: 76.5px;
+				 height: 81px;
+				 background:url(img/sprites-IORI.jpg) no-repeat;
+				 animation-name: jump;
+				 animation-duration: 5s;
+				 animation-timing-function: steps(26,start);
+				 animation-iteration-count: infinite;
+			 }
+
+			 @keyframes jump {
+			 	from {background-position-x:0;}
+			 	to {background-position-x:-1912.5px;}
+			 }
+		</style>
+	</head>
+	<body>
+		<div class="run"></div>
+		<br>
+		<!--<div class="cat"></div>
+		<br>-->
+		<div class="bashen"></div>
+	</body>
+</html>

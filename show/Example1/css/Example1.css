@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* CSS Document */
+p{
+	font-size: 16px;
+	font-family: "微软雅黑";
+	line-height: 28px;
+	text-indent: em;
+}
+.blue{color: #33F;}
+.red{color: #F00;}
+.money{font-size: 26px;}

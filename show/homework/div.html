@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>div布局</title>
+		<link rel="stylesheet" type="text/css" href="css/div.css" />
+		<style type="text/css">
+			td {
+				width: 45px;
+				height: 25px;
+			}
+			
+			.table {
+				width: 300px;
+			}
+			.l{
+				width: 60px;
+				height: 150px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--div表格-->
+		<div class="all">
+			<div class="top">
+				<p>标题</p>
+			</div>
+			<div class="main">
+				<div class="left">菜单</div>
+				<div class="right">内容</div>
+			</div>
+			<div class="footer">版权信息</div>
+		</div>
+		<br />
+		<br />
+		<!--tr、td-->
+		<table border="1" cellpadding="10px" class="table">
+			<tr>
+				<td colspan="5" style="background: orange;width: ;">标题</td>
+			</tr>
+			<tr>
+				<td class="l" rowspan="5" style="background: yellow;">菜单</td>
+				<td class="r" colspan="4" rowspan="5" style="background: gray;">内容</td>
+			</tr>
+			<tr></tr>
+			<tr></tr>
+			<tr></tr>
+			<tr></tr>
+			<tr>
+				<td colspan="5" style="background: orange;">版权</td>
+			</tr>
+		</table>
+
+	</body>
+
+</html>
