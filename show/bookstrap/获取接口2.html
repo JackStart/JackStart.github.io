@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="dist/css/bootstrap.min.css" />
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-3 col001"></div>
+            <div class="col-xs-3 col002"></div>
+            <div class="col-xs-3 col003"></div>
+            <div class="col-xs-3 col004"></div>
+        </div>
+        <button type="button" class="btn btn-danger center-block" onclick="getdata()">往下点，能停算我输！</button>
+    </div>
+
+    <style>
+        .container {
+            background:orange;
+        }
+    </style>
+
+    <script>
+        var pagenum = 1;
+
+        function getdata() {
+            $.get('https://www.apiopen.top/meituApi', {
+                    'page': pagenum,
+                },
+                function (sj, textStatus, xhr) {
+                    console.log(sj);
+
+                    var x = sj;
+                    $.each(x.data, function (index, item) {
+                        if (index % 4 === 0) {
+                            $('.col001').append('<img src="' + item.url + '" class="img-thumbnail">');
+                        } else if (index % 4 === 1) {
+                            $('.col002').append('<img src="' + item.url + '" class="img-thumbnail">');
+                        } else if (index % 4 === 2) {
+                            $('.col003').append('<img src="' + item.url + '" class="img-thumbnail">');
+                        } else if (index % 4 === 3) {
+                            $('.col004').append('<img src="' + item.url + '" class="img-thumbnail">');
+                        }
+                    })
+                }, );
+            pagenum++;
+        }
+        getdata()
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="dist/css/bootstrap.min.css" />
+    <script src="dist/js/bootstrap.min.js"></script>
+    <script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>AJAX</h1>
+        <button onclick="getdata()">按键</button>
+        <div id="box"></div>
+        <img src="" alt="" />
+    </div>
+
+    <style>
+        h1 {
+            text-align: center;
+        }
+
+        img {
+            width: 200px;
+        }
+
+        button {
+            position: fixed;
+            background: orange;
+            padding: 6px 20px 6px 20px;
+            border-radius: 10px;
+            left: 50%;
+            margin-left: -36px;
+        }
+    </style>
+
+    <script>
+        var xmlhttp = new XMLHttpRequest();
+        var APIurl = 'https://www.apiopen.top/meituApi?page=';
+        var page = 1;
+        var json;
+
+        function getdata() {
+            var currentUrl = APIurl + page;
+            xmlhttp.open('GET', currentUrl);
+            xmlhttp.send();
+            page++;
+        }
+
+        xmlhttp.onreadystatechange = function () {
+            if (xmlhttp.readyState === 4 && xmlhttp.status === 200) {
+                json = JSON.parse(xmlhttp.responseText);
+
+                for (var i = 0; i < json.data.length; i++) {
+                    var ImgNode = new Image();
+                    var imgNode = document.createElement('img');
+                    imgNode.src = json.data[i].url;
+                    document.body.appendChild(imgNode);
+                }
+            }
+        }
+    </script>
+</body>
+
+</html>
