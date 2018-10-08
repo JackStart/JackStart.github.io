@@ -12,6 +12,7 @@ body {
 }
 .bigbox .imgbox {
   width: 400px;
+  height: 350px;
   cursor: zoom-in;
   float: left;
   border-radius: 10px;
@@ -20,6 +21,7 @@ body {
 }
 .bigbox .imgbox img {
   width: 100%;
+  height: 100%;
 }
 .layout {
   position: fixed;
