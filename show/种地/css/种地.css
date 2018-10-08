@@ -1,0 +1,135 @@
+header {
+  padding: 20px;
+  background: url(../img/banner.jpg) no-repeat;
+  background-size: cover;
+}
+header .nav {
+  background: rgba(0, 0, 0, 0.41);
+  padding: 15px 0;
+}
+header .nav .glyphicon-menu-hamburger {
+  display: none;
+}
+header .nav ul li a {
+  font-size: 18px;
+  color: white;
+}
+header .nav .breadcrumb {
+  margin-bottom: 0;
+  background: none;
+  text-align: center;
+}
+header .nav .form-group {
+  margin: 0;
+  margin-right: 20px;
+}
+header .nav .form-group input {
+  background: transparent;
+}
+header .nav .form-group span {
+  color: white;
+}
+header .logo {
+  width: 28%;
+  margin: 15em auto 0;
+}
+header .logo a {
+  border-top: 5px solid #fff;
+  border-bottom: 5px solid #fff;
+  font-size: 5em;
+  text-transform: capitalize;
+  text-decoration: none;
+  color: #fff;
+}
+header .grids {
+  position: relative;
+  top: 190px;
+}
+header .grids .col-xs-3 {
+  text-align: center;
+}
+header .grids .col-xs-3 .thumbnail {
+  background: #16a667;
+  border: none;
+  border-radius: 0;
+  padding: 20px;
+}
+header .grids .col-xs-3 .thumbnail img {
+  background: none;
+  padding: 10px;
+  border-width: 8px;
+}
+@media screen and (max-width: 767px) {
+  header .nav {
+    position: relative;
+  }
+  header .nav .glyphicon-menu-hamburger {
+    display: block;
+    font-size: 30px;
+    margin-left: 10px;
+  }
+  header .nav ul {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    width: 100%;
+    padding: 0;
+    display: none;
+  }
+  header .nav ul li {
+    display: block;
+    padding: 6px 0;
+  }
+  header .nav ul li:first-child {
+    border-top: 5px solid orange;
+  }
+  header .nav .breadcrumb {
+    background: #394c53;
+  }
+  header .nav .breadcrumb li::before {
+    content: none;
+  }
+  header .logo {
+    margin: 7em auto 0;
+  }
+  header .logo a {
+    font-size: 2em;
+  }
+  header .thumbnail .caption h3 {
+    font-size: 12px;
+  }
+}
+@media (max-width: 991px) and (min-width: 768px) {
+  header .thumbnail .caption h3 {
+    font-size: 14px;
+  }
+  header .logo {
+    margin: 8em auto 0;
+  }
+  header .logo a {
+    font-size: 3em;
+  }
+  header .breadcrumb {
+    background: #394c53;
+  }
+  header .breadcrumb li::before {
+    content: none;
+  }
+}
+@media (max-width: 1199px) and (min-width: 992px) {
+  header .thumbnail .caption h3 {
+    font-size: 16px;
+  }
+  header .logo {
+    margin: 9em auto 0;
+  }
+  header .logo a {
+    font-size: 4em;
+  }
+  header .breadcrumb {
+    background: #394c53;
+  }
+  header .breadcrumb li::before {
+    content: none;
+  }
+}
