@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        table {
+            border-collapse: collapse;
+            border-spacing: 0;
+            border: 1px solid #000;
+            width: 400px;
+        }
+
+        td {
+            border: 1px solid #000;
+        }
+    </style>
+    <!-- <script src="js/jquery-3.3.1.js"></script> -->
+    <script src="https://cdn.staticfile.org/jquery/1.7/jquery.min.js"></script>
+</head>
+
+<body>
+    <table>
+        <tr>
+            <td>
+                <input type="checkbox" name="" id="" style="display:none;">
+            </td>
+            <td>姓名</td>
+            <td>薪水</td>
+            <td>年龄</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" name="check" id="check1">
+            </td>
+            <td>张三</td>
+            <td>20000</td>
+            <td>23</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" name="check" id="check2">
+            </td>
+            <td>李四</td>
+            <td>22000</td>
+            <td>26</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" name="check" id="check3">
+            </td>
+            <td>王五</td>
+            <td>14000</td>
+            <td>22</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="checkbox" name="check" id="check4">
+            </td>
+            <td>马六</td>
+            <td>15000</td>
+            <td>21</td>
+        </tr>
+    </table>
+    <script>
+        $(function () {
+            $('tr:odd').css('backgroundColor', '#90d7ec');
+            $('tr:even').css('backgroundColor', '#fedcbd');
+            $('tr:first').css('backgroundColor', '#d3d7d4');
+            $('#check1').click(function (e) {
+                $('tr').eq(1).css('backgroundColor', '#ffd400');
+            });
+            $('#check2').click(function (e) {
+                $('tr').eq(2).css('backgroundColor', '#ffd400');
+            });
+            $('#check3').click(function (e) {
+                $('tr').eq(3).css('backgroundColor', '#ffd400');
+            });
+            $('#check4').click(function (e) {
+                $('tr').eq(4).css('backgroundColor', '#ffd400');
+            });
+        });
+    </script>
+</body>
+
+</html>

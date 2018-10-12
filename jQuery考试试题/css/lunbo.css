@@ -1,0 +1,88 @@
+* {
+	margin: 0;
+	padding: 0;
+	text-decoration: none;
+}
+
+body {
+	padding: 20px;
+}
+
+/*最外围父级元素的样式*/
+.box {
+	position: relative;
+	width: 790px;
+	height: 340px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+
+/*图片父级的样式*/
+.img_list {
+	position: absolute;
+	z-index: 1;
+	width: 6320px;
+	height: 340px;
+}
+
+/*图片样式*/
+.img_list img {
+	float: left;
+	width: 790px;
+	height: 340px;
+}
+
+/*箭头的样式*/
+.arrow {
+	width: 40px;
+	height: 60px;
+	font-size: 30px;
+	line-height: 60px;
+	text-align: center;
+	color: #ffffff;
+	background-color: RGBA(0, 0, 0, .3);
+	cursor: pointer;
+	display: none;
+	position: absolute;
+	z-index: 2;
+	top: 160px;
+}
+
+#nex {
+	right: 0px;
+}
+
+/*鼠标悬浮在父空间上时，显示两边的箭头*/
+.box:hover .arrow {
+	display: block;
+}
+
+/*鼠标移到箭头上，改变背景色   也可以通过js*/
+.arrow:hover {
+	background-color: RGBA(0, 0, 0, 7);
+}
+
+/*小圆点外围父级元素样式*/
+.poi {
+	height: 10px;
+	width: 180px;
+	position: absolute;
+	z-index: 2;
+	left: 360px;
+	bottom: 30px;
+}
+
+/*小圆点样式*/
+span {
+	margin-right: 5px;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	float: left;
+	background-color: #ffffff;
+}
+
+/* 默认第一个小圆点的颜色*/
+.on {
+	background-color: #00c37e;
+}

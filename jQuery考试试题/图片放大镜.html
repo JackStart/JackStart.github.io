@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>jquery图片放大镜</title>
+    <script src="js/jquery-3.3.1.js"></script>
+</head>
+
+<body>
+    <div class="thumb">
+        <img src="image/a.png" alt="">
+        <div class="zoom"></div>
+        <div class="xxx"></div>
+    </div>
+    <div class="view">
+        <img src="image/a.png" alt="">
+    </div>
+    <style>
+        .thumb {
+            width: 300px;
+            height: 500px;
+            overflow: hidden;
+            position: relative;
+            /* margin: 0 auto; */
+        }
+
+        .thumb img {
+            width: 100%;
+        }
+
+        .zoom {
+            width: 80px;
+            height: 80px;
+            background: rgba(245, 115, 0, 0.6);
+            position: absolute;
+            top: 0;
+            /* left: 100px; */
+
+        }
+
+        .xxx {
+            width: 300px;
+            height: 500px;
+            /* background: rgba(0, 115, 0, 0.3); */
+            position: absolute;
+            top: 0;
+            left: 0;
+        }
+
+        .view {
+            width: 300px;
+            height: 300px;
+            overflow: hidden;
+            /* margin: 0 auto; */
+            border: 1px solid red;
+            position: relative;
+            /* float: left; */
+            /* display: inline-block; */
+        }
+
+        .view img {
+            width: 700px;
+            height: 700px;
+            position: absolute;
+            top: -50px;
+            left: -50px;
+            /* display: inline-block; */
+        }
+    </style>
+    <script>
+        var magnification = $('.view img').width() / $('.thumb img').width();
+        $('.thumb .xxx').mousemove(function (e) {
+            // values: e.clientX, e.clientY, e.pageX, e.pageY
+            // console.log(e.offsetX + '/' + e.offsetY)
+            var x = e.offsetX;
+            var y = e.offsetY;
+
+            if (e.offsetX <= 50) {
+                x = 50;
+            }
+            if (e.offsetX >= 270) {
+                x = 270;
+            }
+            if (e.offsetY <= 50) {
+                y = 50;
+            }
+            if (e.offsetY >= 355) {
+                y = 355;
+            }
+
+            $('.zoom').css({
+                top: y - 50,
+                // left: e.offsetX - $('.zoom').innerWidth() / 2
+                left: x - 50
+            })
+            $('.view img').css({
+                top: (y - 50) * -magnification,
+                left: (x - 50) * -magnification
+            });
+
+        });
+    </script>
+</body>
+
+</html>
